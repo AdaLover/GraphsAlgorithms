@@ -44,7 +44,7 @@ public class GraphsAdv {
     g.addEdge(6, 7, 1);
     g.addEdge(7, 8, 7);
 
-    BFS bfs =new BFS(g,1);
-    bfs.applyBFS();
+    BellmanFord<Integer> bellmanFord = new BellmanFord<>(g,0);
+    bellmanFord.applyBellmanFord();
 }
 }
